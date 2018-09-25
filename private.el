@@ -30,3 +30,4 @@
 (set-default 'cursor-type 'bar)
 (set-cursor-color "#ffffff")
 
+(setq org-mobile-directory "~/Dropbox/Apps/MobileOrg")
