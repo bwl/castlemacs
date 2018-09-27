@@ -10,7 +10,15 @@
 (set-face-attribute 'default nil :font "Source Code Pro 15")
 (setq-default line-spacing 3)
 
-;; Nice and simple default dark theme.
+;; Disable existing theme before loading ours.
+(defun disable-all-themes ()
+  "disable all active themes."
+  (dolist (i custom-enabled-themes)
+    (disable-theme i)))
+
+(defadvice load-theme (before disable-themes-first activate)
+  (disable-all-themes))
+
 (load-theme 'misterioso)
 
 ;; Show vi-like tilde in the fringe on empty lines.
