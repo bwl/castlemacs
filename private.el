@@ -26,14 +26,12 @@
   :config
   (global-vi-tilde-fringe-mode 0))
 
-;; Set colors to distinguish between active and inactive windows
+;; Set mode-line colors to distinguish between active and inactive windows
 (set-face-attribute 'mode-line nil :background "SkyBlue4")
 (set-face-attribute 'mode-line-inactive nil :background "gray24")
 
-(global-hl-line-mode 1)
- ;; To customize the background color
+;; Customize active line highlight style
 (set-face-background 'hl-line "DodgerBlue4")
-;; (set-face-foreground 'hl-line "White")
 
 (set-default 'cursor-type 'bar)
 (set-cursor-color "#ffffff")
