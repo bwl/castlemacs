@@ -9,7 +9,7 @@
  '(org-agenda-files
    '("~/org/main.org" "/Users/bwl/org/inbox.org" "/Users/bwl/org/agenda.org"))
  '(package-selected-packages
-   '(paradox emmet-mode web-mode markdown-mode haml-mode yaml-mode define-word powerthesaurus flyspell-correct-popup flyspell-correct company shell-pop git-gutter magit counsel-projectile ivy-rich avy flx smex counsel swiper ivy projectile multiple-cursors visual-regexp move-text expand-region which-key vi-tilde-fringe neotree rich-minority smartparens all-the-icons undo-tree simpleclip exec-path-from-shell use-package))
+   '(org-bullets paradox emmet-mode web-mode markdown-mode haml-mode yaml-mode define-word powerthesaurus flyspell-correct-popup flyspell-correct company shell-pop git-gutter magit counsel-projectile ivy-rich avy flx smex counsel swiper ivy projectile multiple-cursors visual-regexp move-text expand-region which-key vi-tilde-fringe neotree rich-minority smartparens all-the-icons undo-tree simpleclip exec-path-from-shell use-package))
  '(paradox-github-token t)
  '(shell-pop-shell-type
    '("ansi-term" "*ansi-term*"
