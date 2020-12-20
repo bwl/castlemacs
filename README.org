@@ -1,11 +1,6 @@
 #+SETUPFILE: ~/code/org-themes/org-html-themes/setup/theme-readtheorg.setup
 #+LANGUAGE: en
-#+TITLE: Castlemacs: modern, minimalist Emacs for macOS ⌘
-
-[[https://img.shields.io/github/tag/freetonik/castlemacs.svg?label=release&style=flat-square]]
-[[https://img.shields.io/badge/license-MIT-green.svg?style=flat-square]]
-
-[[./screenshots/main2.png]]
+#+TITLE: Morg: modern, minimalist org focused Emacs for macOS ⌘
 
 -----
 
@@ -15,6 +10,7 @@
 
 * Features
 - Compatibility with common macOS keybindings
+- Org + OrgRoam Focus
 - Ergonomic keybindings that follow simple, sensible rules
 - Easy windows management and movement
 - Easy movement between points in the file and between files
@@ -33,7 +29,7 @@
     -  [[#install-emacs][Install Emacs]]
       -  [[#alternative-version-advanced][Alternative version (advanced)]]
     -  [[#install-dependencies][Install dependencies]]
-    -  [[#install-castlemacs][Install Castlemacs]]
+    -  [[#install-castlemacs][Install Morg]]
     -  [[#setup-keyboard][Setup keyboard]]
     -  [[#note-to-mojave-users][Note to Mojave users]]
   -  [[#usage][Usage]]
@@ -74,7 +70,7 @@
 
 * Intro
 
-Emacs is +an extensible, customizable text editor+ a framework for creating any text editor you want. The goal of Castlemacs is to build a simple, modern and minimalist Emacs setup tailored to macOS while following these
+Emacs is +an extensible, customizable text editor+ a framework for creating any text editor you want. The goal of Morg is to build a simple, modern and minimalist Org Mode focused Emacs setup tailored to macOS while following these
 
 ** Core principles
 
@@ -86,10 +82,10 @@ Emacs is +an extensible, customizable text editor+ a framework for creating any 
 
 * FAQ
 
-*Is Castlemacs compatible with non-macOS systems?*
-Yes! /Nothing/ binds Castlemacs to macOS except for some conventions. As long as you have some key on your keyboard that can play a role of =Super= (e.g. =windows= key), you're good to go.
+*Is Morg compatible with non-macOS systems?*
+Maybe! /Nothing/ binds Morg to macOS except for some conventions. As long as you have some key on your keyboard that can play a role of =Super= (e.g. =windows= key), you're good to go.
 
-*I don't know Emacs. Can I use Castlemacs or is it hard?*. You don't need to know Emacs, but it will help. The goal of this project is to make a setup that is suitable for absolute beginners.
+*I don't know Emacs. Can I use Morg or is it hard?*. You don't need to know Emacs, but it will help. The goal of this project is to make a setup that is suitable for absolute beginners.
 
 *Is this similar to Spacemacs?*
 No. Spacemacs is a big, custom distribution with additional layers on top of Emacs. Castlemacs is simply a pre-configured Emacs. You don't need to learn anything new if you know your way around Emacs.
@@ -100,7 +96,10 @@ Probably, unless it goes against the Core Principles. Feel free to open an issue
 *Does this setup work well in the terminal?*
 It works, but it is not built for terminal use, since one of the Core Principles is to behave like a native macOS application.
 
-*Why is it called Castlemacs?* See [[#why-this-name][Why this name?]]
+*Why is this project called Morg?*
+Mac Org - Simple as that!
+
+*Why was the original prooject called Castlemacs?* See [[#why-this-name][Why this name?]]
 
 *Where do I store my private config?* You can store your regular private config in =private.el=. This file will not be changed in Castlemacs, so you don't have worry about conflicts.
 
