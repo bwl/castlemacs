@@ -157,18 +157,18 @@
 
 ;; Enable transparent title bar on macOS
 (when (memq window-system '(mac ns))
-  (add-to-list 'default-frame-alist '(ns-appearance . light)) ;; {light, dark}
+  (add-to-list 'default-frame-alist '(ns-appearance . dark)) ;; {light, dark}
   (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t)))
 
 
 ;; Font
-(when (member "menlo" (font-family-list))
-  (set-face-attribute 'default nil :font "Menlo 15"))
+(when (member "Menlo" (font-family-list))
+  (set-face-attribute 'default nil :font "Menlo 16"))
 (setq-default line-spacing 2)
 
 
-;; Nice and simple default light theme.
-(load-theme 'tsdh-light)
+;; Nice and simple default dark theme.
+(load-theme 'misterioso)
 
 
 ;; Pretty icons
@@ -185,8 +185,8 @@
 (global-visual-line-mode 1)
 
 
-;; Highlight current line
-(global-hl-line-mode 1)
+;; Don't Highlight current line
+(global-hl-line-mode 0)
 
 
 ;; Show parens and other pairs.
@@ -257,8 +257,8 @@
   (setq which-key-idle-delay 0.5))
 
 
-;; Disable blinking cursor.
-(blink-cursor-mode 0)
+;; Enable blinking cursor.
+(blink-cursor-mode 1)
 
 
 ;; ================
